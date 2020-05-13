@@ -32,3 +32,5 @@
 
     Initially I wanted to get quite fancy with this, with lots of expanding and closing, but I think I'll start here and add more later if it seems reasonable to do so. 
 
+* *1630*: Wireframe done
+
