@@ -22,6 +22,7 @@ header {
   height: 10%;
   width: 100%;
   background: linear-gradient(rgba(0, 0, 0,1), rgba(0, 0, 0,0.7));
+  z-index: 99;
 
   img { 
     height: 80%;
@@ -36,11 +37,11 @@ header {
   width: 7%;
   top: 1.5%;
   right: 3%;
-  z-index: 2;
   background-image: url(/src/img/menuicon.png);
   background-size: contain;
   background-repeat: no-repeat; 
   background-position: center;
+  z-index: 999;
 
   &:checked ~ nav {
     height: 90%;
@@ -80,6 +81,7 @@ nav {
   flex-direction: column;
   justify-content: space-evenly;
   transition: 1.5s 1.5s;
+  z-index: 9;
 
   a {
     display: flex;

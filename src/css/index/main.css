@@ -28,6 +28,7 @@ header {
   width: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0.7)));
   background: linear-gradient(black, rgba(0, 0, 0, 0.7));
+  z-index: 99;
 }
 
 header img {
@@ -44,11 +45,11 @@ header img {
   width: 7%;
   top: 1.5%;
   right: 3%;
-  z-index: 2;
   background-image: url(/src/img/menuicon.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  z-index: 999;
 }
 
 .menubutton:checked ~ nav {
@@ -100,6 +101,7 @@ nav {
           justify-content: space-evenly;
   -webkit-transition: 1.5s 1.5s;
   transition: 1.5s 1.5s;
+  z-index: 9;
 }
 
 nav a {
