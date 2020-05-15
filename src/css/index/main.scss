@@ -69,6 +69,15 @@ header {
       transition-delay: 0s;
     }
   }
+
+  &:checked ~ .hide {
+    opacity: 0;
+    transition: 1.5s 0s;
+  }
+
+  &:not(:checked) ~ .hide {
+    opacity: 1;
+  }
 }
 
 nav {

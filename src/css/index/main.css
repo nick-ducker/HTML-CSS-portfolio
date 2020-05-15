@@ -82,6 +82,16 @@ header img {
           transition-delay: 0s;
 }
 
+.menubutton:checked ~ .hide {
+  opacity: 0;
+  -webkit-transition: 1.5s 0s;
+  transition: 1.5s 0s;
+}
+
+.menubutton:not(:checked) ~ .hide {
+  opacity: 1;
+}
+
 nav {
   position: fixed;
   top: 10%;
