@@ -1,0 +1,60 @@
+@keyframes scaleIn {
+  from {transform: scale(0)};
+  to {transform:scale(1)};
+}
+
+@keyframes bop1 {
+  0% {transform: scale(1)};
+  40% {transform: scale(1)};
+  45% {transform: scale(0.9)};
+  50% {transform: scale(1)};
+  90% {transform: scale(1)};
+  95% {transform: scale(0.9)};
+  100% {transform: scale(1)};
+}
+
+@keyframes bop2 {
+  0% {transform: scale(1)};
+  45% {transform: scale(1)};
+  50% {transform: scale(0.9)};
+  55% {transform: scale(1)};
+  85% {transform: scale(1)};
+  90% {transform: scale(0.9)};
+  95% {transform: scale(1)};
+}
+
+section {
+  position: fixed;
+  top: 10%;
+  height: 90%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1.5s 2.5s;
+  
+
+  figure {
+    position: absolute;
+    animation: scaleIn 3s 1;
+
+    .drifting {
+      padding-bottom: 10%;
+      animation-delay: 5s;
+      animation: bop1 ease-in 5s 2s infinite;
+    }
+
+    .dev {
+      padding-top: 60%;
+      animation: bop2 ease-out 5s 2s infinite;
+    }
+  }
+}
+
+.index2 {
+  z-index: 2;
+}
+
+.index1 {
+  z-index: 1;
+}
