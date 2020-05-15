@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#background {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(0, 32, 70,1), rgba(0, 32, 70,0.7))
+}
+
+header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  height: 10%;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0,1), rgba(0, 0, 0,0.7));
+
+  img { 
+    height: 80%;
+    margin-left: 3%;
+  }
+}
+
+.menubutton {
+  appearance: none;
+  position: fixed;
+  height: 7%;
+  width: 7%;
+  top: 1.5%;
+  right: 3%;
+  z-index: 2;
+  background-image: url(/src/img/menuicon.png);
+  background-size: contain;
+  background-repeat: no-repeat; 
+  background-position: center;
+
+  &:checked ~ nav {
+    height: 90%;
+    transition-delay: 0s;
+
+    img {
+      opacity: 1;
+    }
+
+    h3 {
+      opacity: 1;
+    }
+  }
+
+  &:not(:checked) ~ nav {
+    height: 0%;
+
+    img {
+      opacity: 0;
+      transition-delay: 0s;
+    }
+
+    h3 {
+      opacity: 0;
+      transition-delay: 0s;
+    }
+  }
+}
+
+nav {
+  position: fixed;
+  top: 10%;
+  height: 90%;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0,0.7), rgba(0, 0, 0,0.3));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  transition: 1.5s 1.5s;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 22.5%;
+    padding: 0 8%;
+    
+    figure {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      
+
+      img {
+        opacity: 0;
+        transition: 1.5s 1.5s;
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: scale-down;
+      }
+    }
+
+    h3 {
+      font-size: 5rem;
+      width: 50%;
+      padding-left: 10%;
+      opacity: 0;
+      transition: 1.5s 1.5s;
+      text-align: left;
+      font-family: 'calibri';
+      font-weight: normal;
+      letter-spacing: 1rem;
+    }
+  }
+}
