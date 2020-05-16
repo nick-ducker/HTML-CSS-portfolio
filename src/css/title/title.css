@@ -166,6 +166,7 @@ section figure {
   position: absolute;
   -webkit-animation: scaleIn 3s 1;
           animation: scaleIn 3s 1;
+  width: 100%;
 }
 
 section figure .drifting {
