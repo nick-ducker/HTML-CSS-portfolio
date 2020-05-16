@@ -1,8 +1,52 @@
-.grid {
-  position: fixed;
-  top: 10%;
-  width: 100%;
-  display: grid;
-  background-color: red;
-  grid-template-columns: repeat(12, 1fr);
+.hide {
+  opacity: 1;
+  transition: 1.5s 1.5s;
 }
+
+.grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  overflow: scroll;
+
+  .spacer {
+    height: 10vh;
+    grid-column: 2 / span 10;
+  }
+
+  .about {
+    grid-column: 2 / span 10;
+
+    .title {
+      margin-top: 5%;
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    .higuy {
+      display: flex;
+      justify-content: center;
+      margin-top: 10%;
+    }
+
+    article {
+      margin-top: 10%;
+      color: #eb5160;
+      text-shadow: 1px 1px 1px #000;
+
+      h4 {
+        font-size: 4rem;
+        margin: 2% 0;
+        font-family: monospace;
+      }
+
+      p {
+        font-size: 2rem;
+        font-family: "calibri";
+      }
+    }
+  }
+}
+
