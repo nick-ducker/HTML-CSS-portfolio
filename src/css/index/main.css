@@ -157,8 +157,8 @@ nav a h3 {
   -webkit-transition: 1.5s 1.5s;
   transition: 1.5s 1.5s;
   text-align: left;
-  font-family: 'calibri';
+  font-family: monospace;
   font-weight: normal;
-  letter-spacing: 1rem;
+  letter-spacing: 0.5rem;
 }
 /*# sourceMappingURL=main.css.map */
