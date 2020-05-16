@@ -1,0 +1,11 @@
+.grid {
+  position: fixed;
+  top: 10%;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  background-color: red;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+}
+/*# sourceMappingURL=about.css.map */

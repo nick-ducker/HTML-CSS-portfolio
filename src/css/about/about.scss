@@ -1,0 +1,8 @@
+.grid {
+  position: fixed;
+  top: 10%;
+  width: 100%;
+  display: grid;
+  background-color: red;
+  grid-template-columns: repeat(12, 1fr);
+}
