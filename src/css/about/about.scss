@@ -1,3 +1,18 @@
+@keyframes inleft {
+  0% {transform: translateX(-100%)};
+  100% {transform: translateX(0%)};
+}
+
+@keyframes hop {
+  0% {transform: scaleY(1)};
+  30% {transform: scaleY(1)};
+  33% {transform: scaleY(0.95)};
+  40% {transform: scaleY(1)};
+  80% {transform: scaleY(1)};
+  83% {transform: scaleY(0.95)};
+  90% {transform: scaleY(1)};
+}
+
 .right {
   text-align: right;
 }
@@ -25,6 +40,7 @@
 
     .title {
       margin-top: 5%;
+      animation: inleft 2s 1 ease-out;
 
       img {
         max-width: 100%;
@@ -35,6 +51,13 @@
       display: flex;
       justify-content: center;
       margin-top: 20%;
+    }
+
+    .higuy {
+      img {
+        animation: hop 5s ease-out infinite; 
+      }
+      
     }
 
     article {

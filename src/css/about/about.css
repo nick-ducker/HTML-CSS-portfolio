@@ -1,3 +1,87 @@
+@-webkit-keyframes inleft {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes inleft {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes hop {
+  0% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  30% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  33% {
+    -webkit-transform: scaleY(0.95);
+            transform: scaleY(0.95);
+  }
+  40% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  80% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  83% {
+    -webkit-transform: scaleY(0.95);
+            transform: scaleY(0.95);
+  }
+  90% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
+@keyframes hop {
+  0% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  30% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  33% {
+    -webkit-transform: scaleY(0.95);
+            transform: scaleY(0.95);
+  }
+  40% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  80% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  83% {
+    -webkit-transform: scaleY(0.95);
+            transform: scaleY(0.95);
+  }
+  90% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
 .right {
   text-align: right;
 }
@@ -34,6 +118,8 @@
 
 .grid .about .title {
   margin-top: 5%;
+  -webkit-animation: inleft 2s 1 ease-out;
+          animation: inleft 2s 1 ease-out;
 }
 
 .grid .about .title img {
@@ -48,6 +134,11 @@
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 20%;
+}
+
+.grid .about .higuy img {
+  -webkit-animation: hop 5s ease-out infinite;
+          animation: hop 5s ease-out infinite;
 }
 
 .grid .about article {
