@@ -1,3 +1,7 @@
+.right {
+  text-align: right;
+}
+
 .hide {
   opacity: 1;
   transition: 1.5s 1.5s;
@@ -6,8 +10,10 @@
 .grid {
   position: relative;
   display: grid;
+  width: 100%;
   grid-template-columns: repeat(12, 1fr);
   overflow: scroll;
+  overflow-y: overlay;
 
   .spacer {
     height: 10vh;
@@ -25,14 +31,14 @@
       }
     }
 
-    .higuy {
+    figure {
       display: flex;
       justify-content: center;
-      margin-top: 10%;
+      margin-top: 20%;
     }
 
     article {
-      margin-top: 10%;
+      margin-top: 20%;
       color: #eb5160;
       text-shadow: 1px 1px 1px #000;
 
@@ -46,6 +52,45 @@
         font-size: 2rem;
         font-family: "calibri";
       }
+    }
+  }
+
+  .skills {
+    grid-column: 2 / span 10;
+
+    .resume {
+      margin-top: 10%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 70%;
+      }
+      a {
+        text-align: center;
+        font-size: 2rem;
+        text-shadow: 1px 1px 1px black;
+        margin: 0 2%;
+        padding: 2% 0;
+        width: 30%;
+        background-color: black;
+        color: rgb(195, 195, 195);
+        border: solid #eb5160 10px;
+        box-shadow: black 15px 0px;
+        transition: 1s;
+
+        &:hover {
+          background-color: rgb(195, 195, 195);
+          color: black;
+        }
+      }
+    }
+
+    figure {
+      display: flex;
+      justify-content: center;
+      margin: 20% 0;
     }
   }
 }
