@@ -1,0 +1,79 @@
+@-webkit-keyframes inright {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes inright {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+.grid {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  overflow: scroll;
+  overflow-y: overlay;
+}
+
+.grid .spacer {
+  height: 10vh;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 10;
+  grid-column: 2 / span 10;
+}
+
+.grid .projects {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 10;
+  grid-column: 2 / span 10;
+}
+
+.grid .projects .title {
+  margin-top: 5%;
+  -webkit-animation: inright 2s 1 ease-out;
+          animation: inright 2s 1 ease-out;
+}
+
+.grid .projects .title img {
+  max-width: 100%;
+}
+
+.grid .projects .flowleft {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.grid .projects .flowleft {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.grid .projects .projbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: red;
+  height: 25%;
+  width: 100%;
+}
+/*# sourceMappingURL=projects.css.map */

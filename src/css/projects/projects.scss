@@ -1,0 +1,46 @@
+@keyframes inright {
+  0% {transform: translateX(100%)};
+  100% {transform: translateX(0%)};
+}
+
+.grid {
+  position: relative;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(12, 1fr);
+  overflow: scroll;
+  overflow-y: overlay;
+
+  .spacer {
+    height: 10vh;
+    grid-column: 2 / span 10;
+  }
+
+  .projects {
+    grid-column: 2 / span 10;
+
+    .title {
+      margin-top: 5%;
+      animation: inright 2s 1 ease-out;
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    .flowleft {
+      flex-direction: row;
+    }
+
+    .flowleft {
+      flex-direction: row-reverse;
+    }
+
+    .projbox {
+      display: flex;
+      background-color: red;
+      height: 25%;
+      width: 100%;
+    }
+  }
+}
