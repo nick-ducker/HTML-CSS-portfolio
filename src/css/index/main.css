@@ -174,4 +174,36 @@ nav a h3 {
   font-weight: normal;
   letter-spacing: 0.5rem;
 }
+
+.grid {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  overflow: scroll;
+  overflow-y: overlay;
+}
+
+.spacer {
+  height: 10vh;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 10;
+  grid-column: 2 / span 10;
+}
+
+.main {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 10;
+  grid-column: 2 / span 10;
+}
+
+.title {
+  margin-top: 5%;
+}
+
+.title img {
+  max-width: 100%;
+}
 /*# sourceMappingURL=main.css.map */

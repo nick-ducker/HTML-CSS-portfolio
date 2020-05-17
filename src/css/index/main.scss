@@ -140,3 +140,28 @@ nav {
     }
   }
 }
+
+.grid {
+  position: relative;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(12, 1fr);
+  overflow: scroll;
+  overflow-y: overlay;
+}
+
+.spacer {
+  height: 10vh;
+  grid-column: 2 / span 10;
+}
+
+.main {
+  grid-column: 2 / span 10;
+}
+
+.title {
+  margin-top: 5%;
+  img {
+    max-width: 100%;
+  }
+}
