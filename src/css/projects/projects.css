@@ -147,6 +147,7 @@ p {
 
 .grid .projects .projbox:hover .imagepreview .projectoverlay {
   opacity: 1;
+  z-index: 1;
 }
 
 .grid .projects .projbox:hover .descripbox {
@@ -208,6 +209,7 @@ p {
   opacity: 0;
   -webkit-transition: 2s 2s;
   transition: 2s 2s;
+  z-index: -1;
 }
 
 .grid .projects .projbox .imagepreview .projectoverlay .titlegit {
