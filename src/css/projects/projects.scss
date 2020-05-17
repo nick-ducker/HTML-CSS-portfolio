@@ -3,6 +3,31 @@
   100% {transform: translateX(0%)};
 }
 
+@keyframes leftright {
+  0% {background-position-x: 25%};
+  25% {background-position-x: 225%};
+  50% {background-position-x: 25%};
+  75% {background-position-x: -175%};
+  100% {background-position-x: 25%};
+}
+
+h4, h5, p {
+  color: white;
+  text-shadow: 5px 5px 5px #0076a3;
+}
+
+h4 {
+  font-size: 5.5rem;
+}
+
+h5 {
+  font-size: 4rem;
+}
+
+p {
+  font-size: 3rem
+}
+
 .grid {
   position: relative;
   display: grid;
@@ -20,7 +45,7 @@
     grid-column: 2 / span 10;
 
     .title {
-      margin-top: 5%;
+      margin-top: 10%;
       animation: inright 2s 1 ease-out;
 
       img {
@@ -29,18 +54,101 @@
     }
 
     .flowleft {
-      flex-direction: row;
+      flex-direction: row
     }
 
-    .flowleft {
+    .flowright {
       flex-direction: row-reverse;
     }
 
     .projbox {
       display: flex;
-      background-color: red;
-      height: 25%;
+      background-color: black;
+      box-shadow: white 0px 5px 1px;
+      border-radius: 10rem;
+      height: 20rem;
       width: 100%;
+      margin: 10% 0;
+      transition: 1.5s;
+      overflow: hidden;
+      
+
+      &:hover {
+        height: 70vh;
+      }
+
+      &:hover .imagepreview {
+        width: 100%; 
+        
+        .projectoverlay {
+          opacity: 1;
+        }
+      }
+
+      &:hover .descripbox {
+        width: 0%;
+        opacity: 0;
+        h4, h5 {
+          opacity: 0;
+        }
+      }
+
+      &:not(:hover) {
+        transition-delay: 2s;
+      }
+
+      &:not(:hover) .imagepreview{
+        .projectoverlay {
+          transition-delay: 0s;
+        }
+      }
+
+      .imagepreview {
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 1.5s 1.5s;
+
+        img {
+          max-height: 100%;
+          max-width: 100%;
+        }
+
+        .projectoverlay {
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          background-color: rgba(0,0,0,0.3);
+          height: 60vh;
+          width: 70%;
+          opacity: 0;
+          transition: 2s 2s;
+
+          .titlegit {
+            display: flex;
+            justify-content: space-between;
+          }
+        }
+      }
+
+      .descripbox {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 1;
+        transition: 1.5s 1.5s;
+
+        h4, h5 {
+          transition: 1.5s;
+        }
+      }
     }
   }
 }
