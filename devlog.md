@@ -44,6 +44,10 @@
 * *1700*: About page complete for mobile
 ***
 
+17.5.20
+* *1700*: Project page complete for mobile
+***
+
 
 
 
