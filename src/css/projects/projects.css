@@ -98,7 +98,7 @@ p {
 }
 
 .grid .projects .title {
-  margin-top: 10%;
+  margin-top: 5%;
   -webkit-animation: inright 2s 1 ease-out;
           animation: inright 2s 1 ease-out;
 }
