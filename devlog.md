@@ -36,6 +36,13 @@
 ***
 13.5.20
 * *0910*:First colour scheme chosen
+***
+15.5.20
+* *1700*: Menu and title page complete for mobile
+***
+16.5.20
+* *1700*: About page complete for mobile
+***
 
 
 
