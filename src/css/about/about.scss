@@ -45,14 +45,14 @@
 
     .higuy {
       img {
-        height: 60vh;
+        width: 50%;
         animation: hop 5s ease-out infinite; 
       }
     }
 
     .whatcode {
       img {
-        width: 80vw;
+        width: 80%;
       }
     }
 
@@ -83,7 +83,7 @@
       align-items: center;
 
       img {
-        width: 50vw;
+        width: 60%;
       }
       a {
         text-align: center;
@@ -111,7 +111,7 @@
       margin: 20% 0;
 
       img {
-        width: 80vw;
+        width: 60%;
       }
     }
   }

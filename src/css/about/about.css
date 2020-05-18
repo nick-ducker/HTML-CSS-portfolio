@@ -109,13 +109,13 @@
 }
 
 .grid .about .higuy img {
-  height: 60vh;
+  width: 50%;
   -webkit-animation: hop 5s ease-out infinite;
           animation: hop 5s ease-out infinite;
 }
 
 .grid .about .whatcode img {
-  width: 80vw;
+  width: 80%;
 }
 
 .grid .about article {
@@ -154,7 +154,7 @@
 }
 
 .grid .skills .resume img {
-  width: 50vw;
+  width: 60%;
 }
 
 .grid .skills .resume a {
@@ -189,6 +189,6 @@
 }
 
 .grid .skills figure img {
-  width: 80vw;
+  width: 60%;
 }
 /*# sourceMappingURL=about.css.map */
