@@ -148,6 +148,7 @@
   margin-bottom: 5rem;
   font-weight: bold;
   text-shadow: 1px 1px 0px #000;
+  font-size: 1.5rem;
 }
 
 .content h4, .content h6, .content p {
@@ -157,5 +158,17 @@
   z-index: 2;
   -webkit-transition: 2s;
   transition: 2s;
+}
+
+@media screen and (min-width: 640px) {
+  .content h4 {
+    font-size: 6rem;
+  }
+  .content h6 {
+    font-size: 2rem;
+  }
+  .content p {
+    font-size: 2rem;
+  }
 }
 /*# sourceMappingURL=blog.css.map */
