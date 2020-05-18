@@ -10,8 +10,12 @@
   width: 100%;
 }
 
+.grid {
+  overflow: hidden;
+}
+
 .content {
-  margin-top: 10%;
+  margin: 10% 0;
   height: 50vh;
   border-radius: 2rem;
   background-position: center;
@@ -47,6 +51,23 @@
     }
   }
 
+  &:not(:hover) {
+
+    transition-delay: 1s;
+    
+    .filterlarge {
+      transition-delay: 0s;
+    }
+
+    .filtersmall {
+      transition-delay: 2s;
+    }
+
+    .maincontent {
+      font-size: 0rem;
+    }
+  }
+
   .filtersmall {
     position: absolute;
     height: 50vh;
@@ -56,7 +77,7 @@
     border-radius: 2rem;
     z-index: 1;
     opacity: 1;
-    transition: 2s;
+    transition: 2s 0s;
   }
 
   .filterlarge {
@@ -67,7 +88,7 @@
     border-radius: 2rem;
     z-index: 1;
     opacity: 0;
-    transition: 2s;
+    transition: 2s 2s;
   }
   
   h4 {
