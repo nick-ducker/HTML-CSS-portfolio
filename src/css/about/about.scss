@@ -45,9 +45,15 @@
 
     .higuy {
       img {
+        height: 60vh;
         animation: hop 5s ease-out infinite; 
       }
-      
+    }
+
+    .whatcode {
+      img {
+        width: 80vw;
+      }
     }
 
     article {
@@ -56,12 +62,12 @@
       text-shadow: 2px 2px 2px #000;
 
       h4 {
-        font-size: 4rem;
+        font-size: 3rem;
         margin: 2% 0;
       }
 
       p {
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-family: "calibri";
       }
     }
@@ -77,18 +83,18 @@
       align-items: center;
 
       img {
-        width: 70%;
+        width: 50vw;
       }
       a {
         text-align: center;
-        font-size: 2rem;
+        font-size: 1rem;
         text-shadow: 1px 1px 1px black;
         margin: 0 2%;
         padding: 2% 0;
         width: 30%;
         background-color: black;
         color: rgb(195, 195, 195);
-        border: solid #eb5160 10px;
+        border: solid #eb5160 5px;
         box-shadow: black 15px 0px;
         transition: 1s;
 
@@ -103,6 +109,10 @@
       display: flex;
       justify-content: center;
       margin: 20% 0;
+
+      img {
+        width: 80vw;
+      }
     }
   }
 }

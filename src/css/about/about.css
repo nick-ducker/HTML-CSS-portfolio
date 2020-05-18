@@ -109,8 +109,13 @@
 }
 
 .grid .about .higuy img {
+  height: 60vh;
   -webkit-animation: hop 5s ease-out infinite;
           animation: hop 5s ease-out infinite;
+}
+
+.grid .about .whatcode img {
+  width: 80vw;
 }
 
 .grid .about article {
@@ -120,12 +125,12 @@
 }
 
 .grid .about article h4 {
-  font-size: 4rem;
+  font-size: 3rem;
   margin: 2% 0;
 }
 
 .grid .about article p {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: "calibri";
 }
 
@@ -149,19 +154,19 @@
 }
 
 .grid .skills .resume img {
-  width: 70%;
+  width: 50vw;
 }
 
 .grid .skills .resume a {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1rem;
   text-shadow: 1px 1px 1px black;
   margin: 0 2%;
   padding: 2% 0;
   width: 30%;
   background-color: black;
   color: #c3c3c3;
-  border: solid #eb5160 10px;
+  border: solid #eb5160 5px;
   -webkit-box-shadow: black 15px 0px;
           box-shadow: black 15px 0px;
   -webkit-transition: 1s;
@@ -181,5 +186,9 @@
       -ms-flex-pack: center;
           justify-content: center;
   margin: 20% 0;
+}
+
+.grid .skills figure img {
+  width: 80vw;
 }
 /*# sourceMappingURL=about.css.map */
