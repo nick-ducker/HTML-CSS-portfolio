@@ -283,5 +283,8 @@ nav a h3 {
     font-size: 3rem;
     text-align: center;
   }
+  .title {
+    max-width: 70%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

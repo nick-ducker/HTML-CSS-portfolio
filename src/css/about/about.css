@@ -115,7 +115,7 @@
 }
 
 .grid .about .whatcode img {
-  width: 80%;
+  max-width: 80%;
 }
 
 .grid .about article {
@@ -190,5 +190,100 @@
 
 .grid .skills figure img {
   width: 60%;
+}
+
+@media screen and (min-width: 640px) {
+  .about {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[10];
+        grid-template-columns: repeat(10, 1fr);
+  }
+  .title {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 10;
+    grid-column: 1 / span 10;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / span 1;
+    height: 20vh;
+  }
+  .title img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .higuy {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-column: 1 / span 5;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / span 1;
+  }
+  .higuy img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .grid .about article p {
+    font-size: 2rem;
+  }
+  .grid .about article h4 {
+    font-size: 4rem;
+  }
+  .wordsone {
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 5;
+    grid-column: 6 / span 5;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / span 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .whatcode {
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 5;
+    grid-column: 6 / span 5;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3 / span 1;
+  }
+  .whatcode img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .wordstwo {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-column: 1 / span 5;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3 / span 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .grid .skills figure {
+    margin: 10% 0;
+  }
+  .grid .skills figure img {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
 }
 /*# sourceMappingURL=about.css.map */
