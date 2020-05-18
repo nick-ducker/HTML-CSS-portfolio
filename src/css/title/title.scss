@@ -60,3 +60,16 @@ section {
 .index1 {
   z-index: 1;
 }
+
+@media screen and (min-width: 1366px) { 
+
+  section figure {
+    .drifting {
+      width: 50vw;
+    }
+    .dev {
+      width: 25vw;
+    }
+  }
+  
+}
