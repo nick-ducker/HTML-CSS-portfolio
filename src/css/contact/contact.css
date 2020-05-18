@@ -1,1 +1,5 @@
-/* No CSS *//*# sourceMappingURL=contact.css.map */
+.title {
+  -webkit-animation: inleft 2s ease-out 1;
+          animation: inleft 2s ease-out 1;
+}
+/*# sourceMappingURL=contact.css.map */
