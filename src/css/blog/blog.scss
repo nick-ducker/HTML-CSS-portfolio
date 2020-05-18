@@ -4,19 +4,22 @@
 
 .one {
   background-image: url(/src/img/filbert-mangundap-QvTrOrhJOJ4-unsplash.jpg);
+  background-size: 100rem;
 }
 
 .two {
   background-image: url(/src/img/frank-mckenna-4V8JxijgZ_c-unsplash.jpg);
+  background-size: 100rem;
 }
 
 .three {
-  background-size: 200rem;
+  background-size: 100rem;
   background-image: url(/src/img/mark-basarab-1OtUkD_8svc-unsplash.jpg);
 }
 
 .four {
   background-image: url(/src/img/qingbao-meng-01_igFr7hd4-unsplash.jpg);
+  background-size: 100rem;
 }
 
 .five {
@@ -60,7 +63,7 @@
 
     .maincontent {
       opacity: 1;
-      font-size: 3rem;
+      
     }
 
     .sub {
@@ -111,15 +114,15 @@
   
   h4 {
     padding-top: 13vh;
-    font-size: 10rem;   
+    font-size: 3rem;   
   }
 
   h6 {
-    font-size: 3rem;
+    font-size: 1rem;
   }
 
   p {
-    font-size: 2.5rem;
+    font-size: 1rem;
   }
 
   .sub {
@@ -129,6 +132,8 @@
   .maincontent {
     opacity: 0;
     margin-bottom: 5rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px #000;
   }
 
   h4, h6, p {
@@ -139,5 +144,9 @@
     transition: 2s;
   }
 
- 
+}
+
+@media screen and (min-width: 640px) {
+
+
 }

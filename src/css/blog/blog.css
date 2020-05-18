@@ -5,19 +5,22 @@
 
 .one {
   background-image: url(/src/img/filbert-mangundap-QvTrOrhJOJ4-unsplash.jpg);
+  background-size: 100rem;
 }
 
 .two {
   background-image: url(/src/img/frank-mckenna-4V8JxijgZ_c-unsplash.jpg);
+  background-size: 100rem;
 }
 
 .three {
-  background-size: 200rem;
+  background-size: 100rem;
   background-image: url(/src/img/mark-basarab-1OtUkD_8svc-unsplash.jpg);
 }
 
 .four {
   background-image: url(/src/img/qingbao-meng-01_igFr7hd4-unsplash.jpg);
+  background-size: 100rem;
 }
 
 .five {
@@ -69,7 +72,6 @@
 
 .content:hover .maincontent {
   opacity: 1;
-  font-size: 3rem;
 }
 
 .content:hover .sub {
@@ -126,15 +128,15 @@
 
 .content h4 {
   padding-top: 13vh;
-  font-size: 10rem;
-}
-
-.content h6 {
   font-size: 3rem;
 }
 
+.content h6 {
+  font-size: 1rem;
+}
+
 .content p {
-  font-size: 2.5rem;
+  font-size: 1rem;
 }
 
 .content .sub {
@@ -144,6 +146,8 @@
 .content .maincontent {
   opacity: 0;
   margin-bottom: 5rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 0px #000;
 }
 
 .content h4, .content h6, .content p {
