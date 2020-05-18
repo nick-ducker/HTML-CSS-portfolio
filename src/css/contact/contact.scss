@@ -2,3 +2,43 @@
   animation: inleft 2s ease-out 1;
 }
 
+.connectdetails {
+  width: 100%;
+  height: 80vh;
+  display: flex; 
+  align-items: center;
+}
+
+.connectillustration {
+  width: 50%;
+  img {
+    max-width: 100%;
+  }
+}
+
+.connectbuttons {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+
+  a {
+    height: 25%;
+
+    &:hover {
+      img {
+        filter:invert(100%);
+      }
+    }
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      transform: scale(0.8);
+      filter: invert(0%);
+      transition: 1s;
+    }
+  }
+}

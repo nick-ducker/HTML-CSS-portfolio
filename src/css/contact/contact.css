@@ -2,4 +2,59 @@
   -webkit-animation: inleft 2s ease-out 1;
           animation: inleft 2s ease-out 1;
 }
+
+.connectdetails {
+  width: 100%;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.connectillustration {
+  width: 50%;
+}
+
+.connectillustration img {
+  max-width: 100%;
+}
+
+.connectbuttons {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.connectbuttons a {
+  height: 25%;
+}
+
+.connectbuttons a:hover img {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+.connectbuttons a img {
+  max-width: 100%;
+  max-height: 100%;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-filter: invert(0%);
+          filter: invert(0%);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
 /*# sourceMappingURL=contact.css.map */
