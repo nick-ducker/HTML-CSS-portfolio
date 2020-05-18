@@ -169,6 +169,7 @@ section figure {
 }
 
 section figure .drifting {
+  width: 80vw;
   padding-bottom: 10%;
   -webkit-animation-delay: 5s;
           animation-delay: 5s;
@@ -177,6 +178,7 @@ section figure .drifting {
 }
 
 section figure .dev {
+  width: 40vw;
   padding-top: 60%;
   -webkit-animation: bop2 ease-out 5s 2s infinite;
           animation: bop2 ease-out 5s 2s infinite;

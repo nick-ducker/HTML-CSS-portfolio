@@ -39,12 +39,14 @@ section {
     animation: scaleIn 3s 1;
 
     .drifting {
+      width: 80vw;
       padding-bottom: 10%;
       animation-delay: 5s;
       animation: bop1 ease-in 5s 2s infinite;
     }
 
     .dev {
+      width: 40vw;
       padding-top: 60%;
       animation: bop2 ease-out 5s 2s infinite;
     }

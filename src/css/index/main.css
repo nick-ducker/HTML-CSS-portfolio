@@ -208,7 +208,7 @@ nav a figure img {
 }
 
 nav a h3 {
-  font-size: 5rem;
+  font-size: 2rem;
   width: 50%;
   padding-left: 10%;
   opacity: 0;
@@ -216,7 +216,8 @@ nav a h3 {
   transition: 1.5s 1.5s;
   text-align: left;
   font-weight: normal;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.2rem;
+  text-shadow: 3px 3px 10px #0076a3;
 }
 
 .grid {
@@ -251,5 +252,36 @@ nav a h3 {
 .title img {
   max-width: 100%;
   max-height: 100%;
+}
+
+@media screen and (min-width: 640px) {
+  nav {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    -ms-grid-rows: 50% 50%;
+        grid-template-rows: 50% 50%;
+  }
+  nav a {
+    height: 80%;
+    width: 40vw;
+    margin: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  nav a h3 {
+    padding: 0;
+    font-size: 3rem;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=main.css.map */
