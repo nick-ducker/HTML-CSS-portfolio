@@ -8,6 +8,17 @@
   100% {transform: translateX(0%)};
 }
 
+@keyframes twitch {
+  1% {transform: rotate(2deg);}
+  3%{transform: rotate(-2deg);}
+  5% {transform: rotate(2deg);}
+  7%{transform: rotate(-2deg);}
+  9% {transform: rotate(2deg);}
+  11% {transform: rotate(-2deg);}
+  13% {transform: rotate(0deg);}
+  11% {transform: rotate(0deg);}
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -26,11 +37,27 @@ p {
   font-family: 'calibri';
 }
 
+.one {
+  animation-delay: 2s;
+}
+
+.two {
+  animation-delay: 1s;
+}
+
+.three {
+  animation-delay: 2.5s;
+}
+
+.four {
+  animation-delay: 1.5s;
+}
+
 #background {
   position: fixed;
   height: 100%;
   width: 100%;
-  background: linear-gradient(rgba(0, 32, 70,1), rgba(0, 32, 70,0.7))
+  background: linear-gradient(rgba(0, 32, 70,1), rgba(0, 32, 70,0.7));
 }
 
 header {
@@ -121,6 +148,7 @@ nav {
     justify-content: space-between;
     height: 22.5%;
     padding: 0 8%;
+    animation: twitch 3s infinite;
     
     figure {
       width: 50%;
@@ -206,4 +234,43 @@ nav {
   .title {
     max-width: 70%;
   }
+}
+
+@media screen and (min-width: 1366px) { 
+  nav a {
+    transition: 2s;
+    padding: 0;
+    height: auto;
+    width: auto;
+    transform: scale(1);
+    margin: 12vh 0;
+
+
+    &:hover {
+      transform: scale(1.5);
+      animation: none;
+      h3{
+        color: #eb5160;
+        text-shadow: 3px 3px 10px #000;
+      }
+    }
+  }
+
+  nav {
+
+    .left {
+      margin-right: 10vw;
+      &:hover {
+        margin-right: 20vw;
+      }
+    }
+  
+    .right {
+      margin-left: 10vw;
+      &:hover {
+        margin-left: 20vw;
+      }
+    }
+  }
+  
 }
