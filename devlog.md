@@ -48,6 +48,11 @@
 * *1700*: Project page complete for mobile
 ***
 
+17.5.20
+* *1100*: Blog page complete for mobile
+* *1300*: Contact page complete for mobile
+***
+
 
 
 
