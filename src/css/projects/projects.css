@@ -34,16 +34,16 @@
   }
 }
 
-h4, h5, p {
+h3, h4, p {
   color: white;
   text-shadow: 5px 5px 5px #0076a3;
 }
 
-h4 {
+h3 {
   font-size: 2rem;
 }
 
-h5 {
+h4 {
   font-size: 1.5rem;
 }
 
@@ -134,7 +134,7 @@ p {
   opacity: 0;
 }
 
-.grid .projects .projbox:hover .descripbox h4, .grid .projects .projbox:hover .descripbox h5 {
+.grid .projects .projbox:hover .descripbox h3, .grid .projects .projbox:hover .descripbox h4 {
   opacity: 0;
 }
 
@@ -221,16 +221,16 @@ p {
   transition: 1.5s 1.5s;
 }
 
-.grid .projects .projbox .descripbox h4, .grid .projects .projbox .descripbox h5 {
+.grid .projects .projbox .descripbox h3, .grid .projects .projbox .descripbox h4 {
   -webkit-transition: 1.5s;
   transition: 1.5s;
 }
 
 @media screen and (min-width: 640px) {
-  h4 {
+  h3 {
     font-size: 4rem;
   }
-  h5 {
+  h4 {
     font-size: 3rem;
   }
   P {

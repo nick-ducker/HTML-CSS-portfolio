@@ -6,16 +6,16 @@
   100% {background-position-x: 25%};
 }
 
-h4, h5, p {
+h3, h4, p {
   color: white;
   text-shadow: 5px 5px 5px #0076a3;
 }
 
-h4 {
+h3 {
   font-size: 2rem;
 }
 
-h5 {
+h4 {
   font-size: 1.5rem;
 }
 
@@ -85,7 +85,7 @@ p {
       &:hover .descripbox {
         width: 0%;
         opacity: 0;
-        h4, h5 {
+        h3, h4 {
           opacity: 0;
         }
       }
@@ -144,7 +144,7 @@ p {
         opacity: 1;
         transition: 1.5s 1.5s;
 
-        h4, h5 {
+        h3, h4 {
           transition: 1.5s;
         }
       }
@@ -154,11 +154,11 @@ p {
 
 @media screen and (min-width: 640px) {
 
-  h4 {
+  h3 {
     font-size: 4rem;
   }
 
-  h5 {
+  h4 {
     font-size: 3rem;
   }
 
