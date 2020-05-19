@@ -45,9 +45,11 @@
   overflow: hidden;
   transition: 2s;
 
+  
+
   &:hover {
     height: 80vh;
-    overflow: scroll;
+    overflow-y: scroll;
 
     .filtersmall {
      opacity: 0;
@@ -160,4 +162,96 @@
   .content p {
     font-size: 2rem;
   }
+}
+
+@media screen and (min-width: 1366px) { 
+  
+  .main {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+  }
+
+  .title {
+    grid-column: 1 / span 11;
+    grid-row: 2 / span 1;
+    height: 20vh;
+
+    img {
+      object-fit: contain;
+    }
+
+  }
+
+  .spacer {
+    grid-column: 1 / span 11;
+    grid-row: 1 / span 1;
+  }
+
+  .post {
+    z-index: 0;
+    transition-delay: 2s;
+    &:hover {
+      z-index: 5;
+      transition-delay: 0s;
+    }
+  }
+
+  .content {
+    width: 100%;
+    transition: 1.5s 1s;
+    &:hover {
+      width: 220%;
+    }    
+  }
+
+  .num1 { 
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 5;
+
+  }
+
+  .num2 { 
+    grid-row: 3 / span 1;
+    grid-column: 7 / span 5;
+      
+  }
+
+  .num3 { 
+    grid-row: 4 / span 1;
+    grid-column: 1 / span 5;
+  }
+
+  .num4 { 
+    grid-row: 4 / span 1;
+    grid-column: 7 / span 5;
+  }
+
+  .num5 { 
+    grid-row: 5 / span 1;
+    grid-column: 1 / span 5;
+  }
+
+  .num2, .num4 {
+    margin-left: 0%;
+    transition: 1.5s 1.5s;
+    &:hover {
+      margin-left: -120%;
+    }  
+  }
+
+  
+  .content {
+    margin-bottom: 5vh;
+
+    .filtersmall {
+      width: 37.9%;
+      transition: 1s 0s;
+    }
+
+    .filterlarge {
+      height: 80vh;
+    }
+  }
+  
+
 }

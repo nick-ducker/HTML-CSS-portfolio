@@ -55,7 +55,7 @@
 
 .content:hover {
   height: 80vh;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .content:hover .filtersmall {
@@ -169,6 +169,113 @@
   }
   .content p {
     font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[11];
+        grid-template-columns: repeat(11, 1fr);
+  }
+  .title {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 11;
+    grid-column: 1 / span 11;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / span 1;
+    height: 20vh;
+  }
+  .title img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .spacer {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 11;
+    grid-column: 1 / span 11;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / span 1;
+  }
+  .post {
+    z-index: 0;
+    -webkit-transition-delay: 2s;
+            transition-delay: 2s;
+  }
+  .post:hover {
+    z-index: 5;
+    -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+  }
+  .content {
+    width: 100%;
+    -webkit-transition: 1.5s 1s;
+    transition: 1.5s 1s;
+  }
+  .content:hover {
+    width: 220%;
+  }
+  .num1 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3 / span 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-column: 1 / span 5;
+  }
+  .num2 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3 / span 1;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 5;
+    grid-column: 7 / span 5;
+  }
+  .num3 {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4 / span 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-column: 1 / span 5;
+  }
+  .num4 {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4 / span 1;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 5;
+    grid-column: 7 / span 5;
+  }
+  .num5 {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    grid-row: 5 / span 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-column: 1 / span 5;
+  }
+  .num2, .num4 {
+    margin-left: 0%;
+    -webkit-transition: 1.5s 1.5s;
+    transition: 1.5s 1.5s;
+  }
+  .num2:hover, .num4:hover {
+    margin-left: -120%;
+  }
+  .content {
+    margin-bottom: 5vh;
+  }
+  .content .filtersmall {
+    width: 37.9%;
+    -webkit-transition: 1s 0s;
+    transition: 1s 0s;
+  }
+  .content .filterlarge {
+    height: 80vh;
   }
 }
 /*# sourceMappingURL=blog.css.map */
