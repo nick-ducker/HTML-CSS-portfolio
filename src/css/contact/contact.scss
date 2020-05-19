@@ -4,9 +4,10 @@
 
 .connectdetails {
   width: 100%;
-  height: 70vh;
+  height: 80vh;
   display: flex; 
   align-items: center;
+  overflow: hidden;
 }
 
 .connectillustration {
@@ -46,6 +47,10 @@
 
 @media screen and (min-width: 640px) { 
 
+  .connectdetails {
+    height: 70vh;
+  }
+
   .connectbuttons {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -58,3 +63,8 @@
   }
 }
 
+@media screen and (min-width: 1366px) {
+  .connectdetails {
+    height: 60vh;
+  }
+}
