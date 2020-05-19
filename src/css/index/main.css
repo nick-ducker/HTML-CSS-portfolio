@@ -428,8 +428,8 @@ nav a h2 {
             animation: none;
   }
   nav a:hover img {
-    -webkit-transform: scale(1.7);
-            transform: scale(1.7);
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
     -webkit-transition-delay: 0s;
             transition-delay: 0s;
   }
