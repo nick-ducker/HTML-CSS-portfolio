@@ -30,6 +30,7 @@ p {
   grid-template-columns: repeat(12, 1fr);
   overflow: scroll;
   overflow-y: overlay;
+  overflow-x: hidden;
 
   .spacer {
     height: 10vh;
@@ -167,5 +168,17 @@ p {
   
   .grid .projects .projbox {
     height: 15rem;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+
+  .grid {
+    overflow: hidden;
+
+    .projects .projbox {
+      height: 12.5rem;
+      margin: 5% 0;
+    }
   }
 }
