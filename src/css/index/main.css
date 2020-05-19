@@ -372,7 +372,7 @@ nav a h3 {
   }
   nav a h3 {
     padding: 0;
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: center;
   }
   .title {
@@ -381,6 +381,18 @@ nav a h3 {
 }
 
 @media screen and (min-width: 1366px) {
+  nav .left {
+    margin-right: 10vw;
+  }
+  nav .left:hover {
+    margin-right: 20vw;
+  }
+  nav .right {
+    margin-left: 10vw;
+  }
+  nav .right:hover {
+    margin-left: 20vw;
+  }
   nav a {
     -webkit-transition: 2s;
     transition: 2s;
@@ -412,18 +424,6 @@ nav a h3 {
     margin-top: 7vh;
     -webkit-transition-delay: 0s;
             transition-delay: 0s;
-  }
-  nav .left {
-    margin-right: 10vw;
-  }
-  nav .left:hover {
-    margin-right: 20vw;
-  }
-  nav .right {
-    margin-left: 10vw;
-  }
-  nav .right:hover {
-    margin-left: 20vw;
   }
 }
 /*# sourceMappingURL=main.css.map */
