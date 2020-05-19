@@ -1,0 +1,318 @@
+@-webkit-keyframes hop {
+  0% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  30% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  33% {
+    -webkit-transform: scaleY(0.95);
+            transform: scaleY(0.95);
+  }
+  40% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  80% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  83% {
+    -webkit-transform: scaleY(0.95);
+            transform: scaleY(0.95);
+  }
+  90% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
+@keyframes hop {
+  0% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  30% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  33% {
+    -webkit-transform: scaleY(0.95);
+            transform: scaleY(0.95);
+  }
+  40% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  80% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  83% {
+    -webkit-transform: scaleY(0.95);
+            transform: scaleY(0.95);
+  }
+  90% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
+.right {
+  text-align: right;
+}
+
+.grid {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  overflow: scroll;
+  overflow-y: overlay;
+}
+
+.grid .spacer {
+  height: 10vh;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 10;
+  grid-column: 2 / span 10;
+}
+
+.grid .about {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 10;
+  grid-column: 2 / span 10;
+}
+
+.grid .about .title {
+  margin-top: 5%;
+  -webkit-animation: inleft 2s 1 ease-out;
+          animation: inleft 2s 1 ease-out;
+}
+
+.grid .about .title img {
+  max-width: 100%;
+}
+
+.grid .about figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20%;
+}
+
+.grid .about .higuy img {
+  width: 50%;
+  -webkit-animation: hop 5s ease-out infinite;
+          animation: hop 5s ease-out infinite;
+}
+
+.grid .about .whatcode img {
+  max-width: 80%;
+}
+
+.grid .about article {
+  margin-top: 20%;
+  color: #eb5160;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.grid .about article h3 {
+  font-size: 3rem;
+  margin: 2% 0;
+}
+
+.grid .about article p {
+  font-size: 1.5rem;
+}
+
+.grid .skills {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 10;
+  grid-column: 2 / span 10;
+}
+
+.grid .skills .resume {
+  margin-top: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grid .skills .resume img {
+  width: 60%;
+}
+
+.grid .skills .resume a {
+  text-align: center;
+  font-size: 1rem;
+  text-shadow: 1px 1px 1px black;
+  margin: 0 2%;
+  padding: 2% 0;
+  width: 30%;
+  background-color: black;
+  color: #c3c3c3;
+  border: solid #eb5160 5px;
+  -webkit-box-shadow: black 15px 0px;
+          box-shadow: black 15px 0px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.grid .skills .resume a:hover {
+  background-color: #c3c3c3;
+  color: black;
+}
+
+.grid .skills figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20% 0;
+}
+
+.grid .skills figure img {
+  width: 60%;
+}
+
+@media screen and (min-width: 640px) {
+  .about {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[10];
+        grid-template-columns: repeat(10, 1fr);
+  }
+  .title {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 10;
+    grid-column: 1 / span 10;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / span 1;
+    height: 20vh;
+  }
+  .title img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .higuy {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-column: 1 / span 5;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / span 1;
+  }
+  .higuy img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .grid .about article p {
+    font-size: 2rem;
+  }
+  .grid .about article h3 {
+    font-size: 4rem;
+  }
+  .wordsone {
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 5;
+    grid-column: 6 / span 5;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / span 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .whatcode {
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 5;
+    grid-column: 6 / span 5;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3 / span 1;
+  }
+  .whatcode img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .wordstwo {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-column: 1 / span 5;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3 / span 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .grid .skills figure {
+    margin: 10% 0;
+  }
+  .grid .skills figure img {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .higuy img {
+    height: 80vh;
+  }
+  .whatcode img {
+    height: 80vh;
+  }
+  .grid .skills {
+    overflow: hidden;
+  }
+  .grid .skills .resume {
+    margin-top: 10%;
+  }
+  .grid .skills .resume img {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  .grid .skills .resume a {
+    font-size: 2rem;
+    padding: 1% 0;
+  }
+  .grid .skills figure {
+    margin: -10% 0;
+  }
+  .grid .skills figure img {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+}
+/*# sourceMappingURL=about.css.map */

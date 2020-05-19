@@ -1,0 +1,253 @@
+@-webkit-keyframes leftright {
+  0% {
+    background-position-x: 25%;
+  }
+  25% {
+    background-position-x: 225%;
+  }
+  50% {
+    background-position-x: 25%;
+  }
+  75% {
+    background-position-x: -175%;
+  }
+  100% {
+    background-position-x: 25%;
+  }
+}
+
+@keyframes leftright {
+  0% {
+    background-position-x: 25%;
+  }
+  25% {
+    background-position-x: 225%;
+  }
+  50% {
+    background-position-x: 25%;
+  }
+  75% {
+    background-position-x: -175%;
+  }
+  100% {
+    background-position-x: 25%;
+  }
+}
+
+h3, h4, p {
+  color: white;
+  text-shadow: 5px 5px 5px #0076a3;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.grid {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  overflow: scroll;
+  overflow-y: overlay;
+  overflow-x: hidden;
+}
+
+.grid .spacer {
+  height: 10vh;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 10;
+  grid-column: 2 / span 10;
+}
+
+.grid .projects {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 10;
+  grid-column: 2 / span 10;
+}
+
+.grid .projects .title {
+  margin-top: 5%;
+  -webkit-animation: inright 2s 1 ease-out;
+          animation: inright 2s 1 ease-out;
+}
+
+.grid .projects .title img {
+  max-width: 100%;
+}
+
+.grid .projects .flowleft {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.grid .projects .flowright {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.grid .projects .projbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: black;
+  -webkit-box-shadow: white 0px 0px 20px;
+          box-shadow: white 0px 0px 20px;
+  border-radius: 3rem;
+  height: 8rem;
+  width: 100%;
+  margin: 10% 0;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  overflow: hidden;
+}
+
+.grid .projects .projbox:hover {
+  height: 70vh;
+}
+
+.grid .projects .projbox:hover .imagepreview {
+  width: 100%;
+}
+
+.grid .projects .projbox:hover .imagepreview .projectoverlay {
+  opacity: 1;
+  z-index: 1;
+}
+
+.grid .projects .projbox:hover .descripbox {
+  width: 0%;
+  opacity: 0;
+}
+
+.grid .projects .projbox:hover .descripbox h3, .grid .projects .projbox:hover .descripbox h4 {
+  opacity: 0;
+}
+
+.grid .projects .projbox:not(:hover) {
+  -webkit-transition-delay: 2s;
+          transition-delay: 2s;
+}
+
+.grid .projects .projbox:not(:hover) .imagepreview .projectoverlay {
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.grid .projects .projbox .imagepreview {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 1.5s 1.5s;
+  transition: 1.5s 1.5s;
+}
+
+.grid .projects .projbox .imagepreview img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.grid .projects .projbox .imagepreview .projectoverlay {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 60vh;
+  width: 70%;
+  opacity: 0;
+  -webkit-transition: 2s 2s;
+  transition: 2s 2s;
+  z-index: -1;
+}
+
+.grid .projects .projbox .imagepreview .projectoverlay .titlegit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.grid .projects .projbox .descripbox {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 1;
+  -webkit-transition: 1.5s 1.5s;
+  transition: 1.5s 1.5s;
+}
+
+.grid .projects .projbox .descripbox h3, .grid .projects .projbox .descripbox h4 {
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+@media screen and (min-width: 640px) {
+  h3 {
+    font-size: 4rem;
+  }
+  h4 {
+    font-size: 3rem;
+  }
+  P {
+    font-size: 2rem;
+  }
+  .grid .projects .projbox {
+    height: 15rem;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .grid {
+    overflow: hidden;
+  }
+  .grid .projects .projbox {
+    height: 12.5rem;
+    margin: 5% 0;
+  }
+}
+/*# sourceMappingURL=projects.css.map */
