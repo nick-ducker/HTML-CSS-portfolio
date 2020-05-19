@@ -58,6 +58,7 @@
 * *1130*: Responsive for Desktop
 * *1255*: Imported custom fonts
 * *1400*: Corrected CSS/HTML for accessibility
+* *1615*: Deployed to netlify, squashing deployment bugs
 ***
 
 
