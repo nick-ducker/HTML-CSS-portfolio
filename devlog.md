@@ -48,9 +48,14 @@
 * *1700*: Project page complete for mobile
 ***
 
-17.5.20
+18.5.20
 * *1100*: Blog page complete for mobile
 * *1300*: Contact page complete for mobile
+* *1700*: Responsive for tablet
+***
+
+19.5.20
+* *1130*: Responsive for Desktop
 ***
 
 
