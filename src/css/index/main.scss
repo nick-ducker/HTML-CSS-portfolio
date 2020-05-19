@@ -242,15 +242,29 @@ nav {
     padding: 0;
     height: auto;
     width: auto;
-    transform: scale(1);
     margin: 12vh 0;
 
+    img {
+      transform: scale(1.2);
+    }
+
+    h3 {
+      margin-top: 2vh;
+    }
+
     &:hover {
-      transform: scale(1.5);
       animation: none;
+      
+
+      img {
+        transform: scale(1.7);
+        transition-delay: 0s;
+      }
       h3{
         color: #eb5160;
         text-shadow: 3px 3px 10px #000;
+        margin-top: 7vh;
+        transition-delay: 0s;
       }
     }
   }

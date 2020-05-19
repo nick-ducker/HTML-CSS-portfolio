@@ -387,19 +387,31 @@ nav a h3 {
     padding: 0;
     height: auto;
     width: auto;
-    -webkit-transform: scale(1);
-            transform: scale(1);
     margin: 12vh 0;
   }
+  nav a img {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  nav a h3 {
+    margin-top: 2vh;
+  }
   nav a:hover {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
     -webkit-animation: none;
             animation: none;
+  }
+  nav a:hover img {
+    -webkit-transform: scale(1.7);
+            transform: scale(1.7);
+    -webkit-transition-delay: 0s;
+            transition-delay: 0s;
   }
   nav a:hover h3 {
     color: #eb5160;
     text-shadow: 3px 3px 10px #000;
+    margin-top: 7vh;
+    -webkit-transition-delay: 0s;
+            transition-delay: 0s;
   }
   nav .left {
     margin-right: 10vw;
