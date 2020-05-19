@@ -286,7 +286,7 @@
   }
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1250px) {
   .higuy img {
     height: 80vh;
   }

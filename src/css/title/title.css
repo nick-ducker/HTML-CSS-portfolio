@@ -192,7 +192,7 @@ section figure .dev {
   z-index: 1;
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1250px) {
   section figure .drifting {
     width: 50vw;
   }
