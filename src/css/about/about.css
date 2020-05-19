@@ -294,23 +294,26 @@
   .whatcode img {
     height: 80vh;
   }
+  .grid .skills {
+    overflow: hidden;
+  }
   .grid .skills .resume {
     margin-top: 10%;
   }
   .grid .skills .resume img {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
   }
   .grid .skills .resume a {
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 1% 0;
   }
   .grid .skills figure {
-    margin: 5% 0;
+    margin: -10% 0;
   }
   .grid .skills figure img {
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
   }
 }
 /*# sourceMappingURL=about.css.map */

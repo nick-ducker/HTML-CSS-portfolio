@@ -200,21 +200,23 @@
 
   .grid .skills {
 
+    overflow: hidden;
+
     .resume {
       margin-top: 10%;
       img {
-        transform: scale(0.8);
+        transform: scale(0.7);
       }
 
       a {
-        font-size: 3rem;
+        font-size: 2rem;
         padding: 1% 0;
       }
     }
     figure {
-      margin: 5% 0;
+      margin: -10% 0;
       img {
-        transform: scale(0.7);
+        transform: scale(0.5);
       }
     }
   }
