@@ -286,4 +286,31 @@
             transform: scale(0.8);
   }
 }
+
+@media screen and (min-width: 1366px) {
+  .higuy img {
+    height: 80vh;
+  }
+  .whatcode img {
+    height: 80vh;
+  }
+  .grid .skills .resume {
+    margin-top: 10%;
+  }
+  .grid .skills .resume img {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  .grid .skills .resume a {
+    font-size: 3rem;
+    padding: 1% 0;
+  }
+  .grid .skills figure {
+    margin: 5% 0;
+  }
+  .grid .skills figure img {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+}
 /*# sourceMappingURL=about.css.map */
