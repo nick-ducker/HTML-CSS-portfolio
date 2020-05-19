@@ -172,7 +172,7 @@
   }
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1250px) {
   .main {
     display: -ms-grid;
     display: grid;
