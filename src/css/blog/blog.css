@@ -4,27 +4,27 @@
 }
 
 .first {
-  background-image: url(/src/img/filbert-mangundap-QvTrOrhJOJ4-unsplash.jpg);
+  background-image: url(../../img/filbert-mangundap-QvTrOrhJOJ4-unsplash.jpg);
   background-size: 100rem;
 }
 
 .second {
-  background-image: url(/src/img/frank-mckenna-4V8JxijgZ_c-unsplash.jpg);
+  background-image: url(../../img/frank-mckenna-4V8JxijgZ_c-unsplash.jpg);
   background-size: 100rem;
 }
 
 .third {
   background-size: 100rem;
-  background-image: url(/src/img/mark-basarab-1OtUkD_8svc-unsplash.jpg);
+  background-image: url(../../img/mark-basarab-1OtUkD_8svc-unsplash.jpg);
 }
 
 .fourth {
-  background-image: url(/src/img/qingbao-meng-01_igFr7hd4-unsplash.jpg);
+  background-image: url(../../img/qingbao-meng-01_igFr7hd4-unsplash.jpg);
   background-size: 100rem;
 }
 
 .fifth {
-  background-image: url(/src/img/eberhard-grossgasteiger-pBgnT4KH8d4-unsplash.jpg);
+  background-image: url(../../img/eberhard-grossgasteiger-pBgnT4KH8d4-unsplash.jpg);
   background-size: 100rem;
 }
 
