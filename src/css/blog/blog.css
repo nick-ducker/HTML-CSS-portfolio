@@ -66,7 +66,7 @@
   opacity: 1;
 }
 
-.content:hover h4 {
+.content:hover h3 {
   padding-top: 2vh;
 }
 
@@ -104,8 +104,8 @@
   -webkit-transform: scaleY(1);
           transform: scaleY(1);
   width: 83.4%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.7)));
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
   border-radius: 2rem;
   z-index: 1;
   opacity: 1;
@@ -117,8 +117,8 @@
   position: absolute;
   height: 80vh;
   width: 83.4%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), color-stop(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.2)));
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), color-stop(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.4)));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4));
   border-radius: 2rem;
   z-index: 1;
   opacity: 0;
@@ -126,12 +126,12 @@
   transition: 2s 2s;
 }
 
-.content h4 {
+.content h3 {
   padding-top: 13vh;
   font-size: 3rem;
 }
 
-.content h6 {
+.content h4 {
   font-size: 1rem;
 }
 
@@ -148,10 +148,10 @@
   margin-bottom: 5rem;
   font-weight: bold;
   text-shadow: 1px 1px 0px #000;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
-.content h4, .content h6, .content p {
+.content h3, .content h4, .content p {
   color: white;
   margin: 0 5%;
   text-shadow: 5px 5px 5px #0076a3;
@@ -161,10 +161,10 @@
 }
 
 @media screen and (min-width: 640px) {
-  .content h4 {
+  .content h3 {
     font-size: 6rem;
   }
-  .content h6 {
+  .content h4 {
     font-size: 2rem;
   }
   .content p {
