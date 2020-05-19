@@ -56,6 +56,7 @@
 
 19.5.20
 * *1130*: Responsive for Desktop
+* *1255*: Imported custom fonts
 ***
 
 
