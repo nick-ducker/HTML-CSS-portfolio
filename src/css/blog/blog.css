@@ -5,35 +5,35 @@
 
 .first {
   background-image: url(../../img/filbert-mangundap-QvTrOrhJOJ4-unsplash.jpg);
-  background-size: 100rem;
+  background-size: 130rem;
 }
 
 .second {
   background-image: url(../../img/frank-mckenna-4V8JxijgZ_c-unsplash.jpg);
-  background-size: 100rem;
+  background-size: 130rem;
 }
 
 .third {
-  background-size: 100rem;
+  background-size: 130rem;
   background-image: url(../../img/mark-basarab-1OtUkD_8svc-unsplash.jpg);
 }
 
 .fourth {
   background-image: url(../../img/qingbao-meng-01_igFr7hd4-unsplash.jpg);
-  background-size: 100rem;
+  background-size: 130rem;
 }
 
 .fifth {
   background-image: url(../../img/eberhard-grossgasteiger-pBgnT4KH8d4-unsplash.jpg);
-  background-size: 100rem;
-}
-
-.post {
-  width: 100%;
+  background-size: 130rem;
 }
 
 .grid {
   overflow: hidden;
+}
+
+.delay {
+  width: 100%;
 }
 
 .content {
@@ -49,8 +49,8 @@
       -ms-flex-direction: column;
           flex-direction: column;
   overflow: hidden;
-  -webkit-transition: 2s;
-  transition: 2s;
+  -webkit-transition: 2s 1s;
+  transition: 2s 1s;
 }
 
 .content:hover {
@@ -164,7 +164,7 @@
 
 @media screen and (min-width: 640px) {
   .content h3 {
-    font-size: 6rem;
+    font-size: 4.5rem;
   }
   .content h4 {
     font-size: 2rem;
@@ -202,12 +202,12 @@
     -ms-grid-row-span: 1;
     grid-row: 1 / span 1;
   }
-  .post {
+  .delay {
     z-index: 0;
     -webkit-transition-delay: 2s;
             transition-delay: 2s;
   }
-  .post:hover {
+  .delay:hover {
     z-index: 5;
     -webkit-transition-delay: 0s;
             transition-delay: 0s;
@@ -279,7 +279,13 @@
   }
   .content h3 {
     padding-top: 7vh;
+    font-size: 5rem;
+  }
+  .content .sub {
     font-size: 3rem;
+  }
+  .content .maincontent {
+    font-size: 2.5rem;
   }
 }
 /*# sourceMappingURL=blog.css.map */
