@@ -276,7 +276,7 @@ header a img {
 
 .menubutton:checked ~ nav h2 {
   opacity: 1;
-  height: 100%;
+  height: 50%;
 }
 
 .menubutton:not(:checked) ~ nav {
@@ -484,7 +484,7 @@ nav a h2 {
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
   }
-  nav a h3 {
+  nav a h2 {
     margin-top: 2vh;
   }
   nav a:hover {
