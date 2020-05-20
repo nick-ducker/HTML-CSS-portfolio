@@ -17,10 +17,23 @@
 
 .connectillustration {
   width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .connectillustration img {
   max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .connectbuttons {
@@ -78,11 +91,19 @@
   .connectbuttons a {
     height: 100%;
   }
+  .connectillustration img {
+    max-width: 100%;
+    max-height: 80%;
+  }
 }
 
 @media screen and (min-width: 1250px) {
   .connectdetails {
     height: 60vh;
+  }
+  .connectillustration img {
+    max-width: 100%;
+    max-height: 80%;
   }
 }
 /*# sourceMappingURL=contact.css.map */

@@ -12,8 +12,14 @@
 
 .connectillustration {
   width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   img {
     max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
   }
 }
 
@@ -61,10 +67,24 @@
       height: 100%;
     }
   }
+
+  .connectillustration {
+    img {
+      max-width: 100%;
+      max-height: 80%;
+    }
+  }
 }
 
 @media screen and (min-width: 1250px) {
   .connectdetails {
     height: 60vh;
+  }
+
+  .connectillustration {
+    img {
+      max-width: 100%;
+      max-height: 80%;
+    }
   }
 }
