@@ -130,6 +130,10 @@ p {
           .titlegit {
             display: flex;
             justify-content: space-between;
+
+            a img {
+              max-height: 100%;
+            }
           }
         }
       }

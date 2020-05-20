@@ -200,6 +200,10 @@ p {
           justify-content: space-between;
 }
 
+.grid .projects .projbox .imagepreview .projectoverlay .titlegit a img {
+  max-height: 100%;
+}
+
 .grid .projects .projbox .descripbox {
   width: 50%;
   height: 100%;
