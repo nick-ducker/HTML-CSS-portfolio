@@ -238,6 +238,9 @@ header a img {
   height: 90%;
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
+}
+
+.menubutton:checked ~ nav a {
   z-index: 5;
 }
 
@@ -251,6 +254,9 @@ header a img {
 
 .menubutton:not(:checked) ~ nav {
   height: 0%;
+}
+
+.menubutton:not(:checked) ~ nav a {
   z-index: -5;
 }
 
