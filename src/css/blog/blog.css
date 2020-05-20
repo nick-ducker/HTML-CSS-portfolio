@@ -55,7 +55,12 @@
 
 .content:hover {
   height: 80vh;
-  overflow-y: scroll;
+  overflow: scroll;
+  -ms-overflow-style: none;
+}
+
+.content:hover::-webkit-scrollbar {
+  display: none;
 }
 
 .content:hover .filtersmall {
@@ -127,7 +132,7 @@
 }
 
 .content h3 {
-  padding-top: 13vh;
+  padding-top: 7vh;
   font-size: 3rem;
 }
 
@@ -210,14 +215,6 @@
     -webkit-transition-delay: 0s;
             transition-delay: 0s;
   }
-  .content {
-    width: 100%;
-    -webkit-transition: 1.5s 1s;
-    transition: 1.5s 1s;
-  }
-  .content:hover {
-    width: 220%;
-  }
   .num1 {
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
@@ -268,6 +265,12 @@
   }
   .content {
     margin-bottom: 5vh;
+    width: 100%;
+    -webkit-transition: 1.5s 1s;
+    transition: 1.5s 1s;
+  }
+  .content:hover {
+    width: 220%;
   }
   .content .filtersmall {
     width: 37.9%;
@@ -276,6 +279,10 @@
   }
   .content .filterlarge {
     height: 80vh;
+  }
+  .content h3 {
+    padding-top: 7vh;
+    font-size: 3rem;
   }
 }
 /*# sourceMappingURL=blog.css.map */

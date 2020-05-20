@@ -202,9 +202,8 @@ nav {
   display: grid;
   width: 100%;
   grid-template-columns: repeat(12, 1fr);
-  overflow: scroll;
-  overflow-y: overlay;
-  overflow-x: overlay;
+  
+
 }
 
 .spacer {

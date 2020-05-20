@@ -44,12 +44,15 @@
   flex-direction: column;
   overflow: hidden;
   transition: 2s;
-
   
-
   &:hover {
     height: 80vh;
-    overflow-y: scroll;
+    overflow: scroll;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
 
     .filtersmall {
      opacity: 0;
@@ -115,7 +118,7 @@
   }
   
   h3 {
-    padding-top: 13vh;
+    padding-top: 7vh;
     font-size: 3rem;   
   }
 
@@ -137,6 +140,7 @@
     font-weight: bold;
     text-shadow: 1px 1px 0px #000;
     font-size: 2rem;
+    
   }
 
   h3, h4, p {
@@ -196,14 +200,6 @@
     }
   }
 
-  .content {
-    width: 100%;
-    transition: 1.5s 1s;
-    &:hover {
-      width: 220%;
-    }    
-  }
-
   .num1 { 
     grid-row: 3 / span 1;
     grid-column: 1 / span 5;
@@ -238,10 +234,15 @@
       margin-left: -120%;
     }  
   }
-
   
   .content {
     margin-bottom: 5vh;
+    width: 100%;
+    transition: 1.5s 1s;
+
+    &:hover {
+      width: 220%;
+    } 
 
     .filtersmall {
       width: 37.9%;
@@ -250,6 +251,11 @@
 
     .filterlarge {
       height: 80vh;
+    }
+
+    h3 {
+      padding-top: 7vh;
+      font-size: 3rem;   
     }
   }
   
