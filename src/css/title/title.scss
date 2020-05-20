@@ -23,7 +23,7 @@
   95% {transform: scale(1)};
 }
 
-.title {
+.logo {
   position: fixed;
   top: 10%;
   height: 90%;
@@ -63,7 +63,7 @@
 
 @media screen and (min-width: 1250px) { 
 
-  section figure {
+  .logo figure {
     .drifting {
       width: 50vw;
     }

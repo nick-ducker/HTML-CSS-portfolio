@@ -144,7 +144,7 @@
   }
 }
 
-.title {
+.logo {
   position: fixed;
   top: 10%;
   height: 90%;
@@ -162,13 +162,13 @@
   transition: 1.5s 2.5s;
 }
 
-.title figure {
+.logo figure {
   position: absolute;
   -webkit-animation: scaleIn 3s 1;
           animation: scaleIn 3s 1;
 }
 
-.title figure .drifting {
+.logo figure .drifting {
   width: 80vw;
   padding-bottom: 10%;
   -webkit-animation-delay: 5s;
@@ -177,7 +177,7 @@
           animation: bop1 ease-in 5s 2s infinite;
 }
 
-.title figure .dev {
+.logo figure .dev {
   width: 40vw;
   padding-top: 60%;
   -webkit-animation: bop2 ease-out 5s 2s infinite;
@@ -193,10 +193,10 @@
 }
 
 @media screen and (min-width: 1250px) {
-  section figure .drifting {
+  .logo figure .drifting {
     width: 50vw;
   }
-  section figure .dev {
+  .logo figure .dev {
     width: 25vw;
   }
 }
