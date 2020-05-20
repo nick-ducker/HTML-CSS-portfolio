@@ -194,9 +194,13 @@ header h1 {
   color: transparent;
 }
 
-header img {
+header a {
   height: 80%;
   margin-left: 3%;
+}
+
+header a img {
+  max-height: 100%;
 }
 
 .visuallyhidden {
