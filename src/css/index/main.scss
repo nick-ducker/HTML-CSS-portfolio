@@ -135,6 +135,7 @@ header {
   &:checked ~ nav {
     height: 90%;
     transition-delay: 0s;
+    z-index: 5;
 
     img {
       opacity: 1;
@@ -147,6 +148,7 @@ header {
 
   &:not(:checked) ~ nav {
     height: 0%;
+    z-index: -5;
 
     img {
       opacity: 0;
