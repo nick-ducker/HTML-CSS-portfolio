@@ -1,4 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald:wght@300&display=swap");
+@-webkit-keyframes dropdown {
+  0% {
+    display: block;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes dropdown {
+  0% {
+    display: block;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @-webkit-keyframes inleft {
   0% {
     -webkit-transform: translateX(-150%);
@@ -9,6 +34,7 @@
             transform: translateX(0%);
   }
 }
+
 @keyframes inleft {
   0% {
     -webkit-transform: translateX(-150%);
@@ -250,6 +276,7 @@ header a img {
 
 .menubutton:checked ~ nav h2 {
   opacity: 1;
+  height: 100%;
 }
 
 .menubutton:not(:checked) ~ nav {
@@ -258,6 +285,8 @@ header a img {
 
 .menubutton:not(:checked) ~ nav a {
   z-index: -5;
+  pointer-events: none;
+  cursor: default;
 }
 
 .menubutton:not(:checked) ~ nav img {
@@ -267,6 +296,7 @@ header a img {
 }
 
 .menubutton:not(:checked) ~ nav h2 {
+  height: 0%;
   opacity: 0;
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
@@ -399,6 +429,7 @@ nav a h2 {
         grid-template-columns: 50% 50%;
     -ms-grid-rows: 50% 50%;
         grid-template-rows: 50% 50%;
+    height: 80vh;
   }
   nav a {
     height: 80%;
@@ -417,8 +448,11 @@ nav a h2 {
   }
   nav a h2 {
     padding: 0;
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
+  }
+  nav a figure {
+    height: 20vh;
   }
   .title {
     max-width: 70%;
