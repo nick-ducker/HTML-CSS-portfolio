@@ -61,6 +61,11 @@
 * *1615*: Deployed to netlify, squashing deployment bugs
 ***
 
+20.5.20
+* *1100*: Squashed deployment bugs
+* *1400*: Add small features IE favicon, scroll bar, extra links.
+* *1500*: Got site to pass validator.
+
 
 
 
