@@ -65,7 +65,10 @@
 * *1100*: Squashed deployment bugs
 * *1400*: Add small features IE favicon, scroll bar, extra links.
 * *1500*: Got site to pass validator.
+***
 
+21.5.20
+* *1200*: Site is finally stable on all platforms
 
 
 
