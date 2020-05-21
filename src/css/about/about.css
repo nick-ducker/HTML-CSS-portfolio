@@ -279,11 +279,13 @@
             justify-content: center;
   }
   .grid .skills figure {
-    margin: 10% 0;
+    margin: 0;
   }
   .grid .skills figure img {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+    height: 100%;
+    width: 100%;
   }
 }
 
