@@ -311,11 +311,12 @@
     padding: 1% 0;
   }
   .grid .skills figure {
-    margin: -10% 0;
+    margin: 5% 0;
   }
   .grid .skills figure img {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
+    max-height: 120vh;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 }
 /*# sourceMappingURL=about.css.map */

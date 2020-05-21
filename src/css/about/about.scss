@@ -216,9 +216,11 @@
       }
     }
     figure {
-      margin: -10% 0;
+      margin: 5% 0;
       img {
-        transform: scale(0.5);
+        max-height: 120vh;
+        object-fit: contain;
+        
       }
     }
   }
