@@ -12,6 +12,11 @@
   text-align: right;
 }
 
+p {
+  margin-top: 7vh;
+  line-height: 1.2em;
+}
+
 .grid {
   position: relative;
   display: grid;
@@ -95,7 +100,7 @@
         background-color: black;
         color: rgb(195, 195, 195);
         border: solid #eb5160 5px;
-        box-shadow: black 15px 0px;
+        // box-shadow: black 15px 0px;
         transition: 1s;
 
         &:hover {

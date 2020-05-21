@@ -64,6 +64,11 @@
   text-align: right;
 }
 
+p {
+  margin-top: 7vh;
+  line-height: 1.2em;
+}
+
 .grid {
   position: relative;
   display: -ms-grid;
@@ -167,8 +172,6 @@
   background-color: black;
   color: #c3c3c3;
   border: solid #eb5160 5px;
-  -webkit-box-shadow: black 15px 0px;
-          box-shadow: black 15px 0px;
   -webkit-transition: 1s;
   transition: 1s;
 }
