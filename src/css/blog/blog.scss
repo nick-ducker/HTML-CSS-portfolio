@@ -152,17 +152,24 @@
 
 @media screen and (min-width: 640px) {
 
-  .content h3 {
-    font-size: 4.5rem;
-  }
+  .content {
 
-  .content time {
-    font-size: 2rem;
-  }
+    time {
+      font-size: 2rem;
+    }
 
-  .content p {
-    font-size: 2rem;
-  }
+    h3 {
+      font-size: 4.5rem;
+    }
+
+    .sub {
+      font-size: 3rem;
+    }
+
+    .maincontent {
+      font-size: 2rem;
+    }
+  }  
 }
 
 @media screen and (min-width: 1250px) { 
