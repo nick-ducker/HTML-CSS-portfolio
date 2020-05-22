@@ -247,7 +247,7 @@ p {
 }
 
 @media screen and (min-width: 1250px) {
-  P {
+  p {
     font-size: 2rem;
   }
   .grid {
