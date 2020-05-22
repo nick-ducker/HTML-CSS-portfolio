@@ -23,8 +23,8 @@ p {
   width: 100%;
   grid-template-columns: repeat(12, 1fr);
   overflow: scroll;
-  overflow-y: overlay;
-  overflow-x: overlay;
+  overflow-y: hidden;
+  overflow-x: hidden;
 
   .spacer {
     height: 10vh;

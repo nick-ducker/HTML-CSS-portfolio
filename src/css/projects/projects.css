@@ -59,7 +59,7 @@ p {
   -ms-grid-columns: (1fr)[12];
       grid-template-columns: repeat(12, 1fr);
   overflow: scroll;
-  overflow-y: overlay;
+  overflow-y: hidden;
   overflow-x: hidden;
 }
 
