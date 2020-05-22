@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald:wght@300&display=swap');
 
+
+// Menu dropdown animation
 @keyframes dropdown {
   0% {display: block;
       opacity: 0};
@@ -7,6 +9,7 @@
   100% {opacity: 1;};
 }
 
+// Title animations
 @keyframes inleft {
   0% {transform: translateX(-150%)};
   100% {transform: translateX(0%)};
@@ -28,6 +31,7 @@
   11% {transform: rotate(0deg);}
 }
 
+// Custom scrollbar css
 html::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
   background-color: #F5F5F5;
@@ -49,16 +53,19 @@ html::-webkit-scrollbar-thumb {
     color-stop(0.86, rgb(28,58,148)));
 }
 
+// Margin & padding reset
 * {
   margin: 0;
   padding: 0;
 }
 
+// link styling reset
 a {
   color: white;
   text-decoration: none;
 }
 
+// Font styling
 h3, h2, h4 {
   font-family: 'Oswald',monospace;
 }
@@ -67,6 +74,7 @@ p {
   font-family: 'Montserrat','calibri',sans-serif;
 }
 
+//Animation delays for twitch animation on menu
 .one {
   animation-delay: 2s;
 }
@@ -83,6 +91,7 @@ p {
   animation-delay: 1.5s;
 }
 
+//Website background gradient
 #background {
   position: fixed;
   height: 100%;
@@ -90,6 +99,7 @@ p {
   background: linear-gradient(rgba(0, 32, 70,1), rgba(0, 32, 70,0.7));
 }
 
+//sitewide header css
 header {
   position: fixed;
   display: flex;
@@ -115,6 +125,7 @@ header {
   }
 }
 
+//CSS class for hiding h1 title elements
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -126,6 +137,7 @@ header {
   width: 1px;
 }
 
+//menubutton checkbox css for dropping down nav element
 .menubutton {
   appearance: none;
   position: fixed;
@@ -188,11 +200,13 @@ header {
   }
 }
 
+//CSS rule for hiding selected element when nav drops down
 .hide {
   opacity: 1;
   transition: 1.5s 1.5s;
 }
 
+//nav css for creating drop down menu layout
 nav {
   position: fixed;
   top: 10%;
@@ -244,24 +258,26 @@ nav {
   }
 }
 
+//grid layout css for all pages
 .grid {
   position: relative;
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(12, 1fr);
-  
-
+  grid-template-columns: repeat(12, 1fr); 
 }
 
+//spacer rule for all pages
 .spacer {
   height: 10vh;
   grid-column: 2 / span 10;
 }
 
+//main content wrapper for all pages
 .main {
   grid-column: 2 / span 10;
 }
 
+//title rule for all pages
 .title {
   margin-top: 5%;
   img {
@@ -270,6 +286,7 @@ nav {
   }
 }
 
+//media rule for tablet
 @media screen and (min-width: 640px) {
   nav {
     display: grid;
@@ -304,6 +321,7 @@ nav {
   }
 }
 
+//media rule for desktop
 @media screen and (min-width: 1250px) { 
   nav {
 
