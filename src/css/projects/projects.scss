@@ -24,29 +24,11 @@ p {
 }
 
 .grid {
-  position: relative;
-  display: grid;
-  width: 100%;
-  grid-template-columns: repeat(12, 1fr);
-  overflow: scroll;
-  overflow-y: hidden;
-  overflow-x: hidden;
 
-  .spacer {
-    height: 10vh;
-    grid-column: 2 / span 10;
-  }
-
-  .projects {
-    grid-column: 2 / span 10;
-
-    .title {
-      margin-top: 5%;
+  .main {
+    
+    .title { 
       animation: inright 2s 1 ease-out;
-
-      img {
-        max-width: 100%;
-      }
     }
 
     .flowleft {
@@ -171,7 +153,7 @@ p {
     font-size: 1.5rem;
   }
   
-  .grid .projects .projbox {
+  .grid .main .projbox {
     height: 15rem;
   }
 }
@@ -185,7 +167,7 @@ p {
   .grid {
     overflow: hidden;
 
-    .projects .projbox {
+    .main .projbox {
       height: 12.5rem;
       margin: 5% 0;
     }
