@@ -73,6 +73,6 @@
 ***
 22.5.20
 * *1100*: Commented all HTML 
-* 
+* *1200*: Commented all CSS
 
 
