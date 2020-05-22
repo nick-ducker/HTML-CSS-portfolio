@@ -1,3 +1,4 @@
+//character hopping animation
 @keyframes hop {
   0% {transform: scaleY(1)};
   30% {transform: scaleY(1)};
@@ -8,17 +9,19 @@
   90% {transform: scaleY(1)};
 }
 
+//css rule for aligning second description text to the right
 .right {
   text-align: right;
 }
 
+//paragraph styling
 p {
   margin-top: 7vh;
   line-height: 1.2em;
 }
 
+//styling for text description and images
 .main {
-
   .title {
     animation: inleft 2s 1 ease-out;
   }
@@ -58,9 +61,11 @@ p {
   }
 }
 
+//styling for resume and skills section
 .skills {
   grid-column: 2 / span 10;
 
+  //styling to display resume title with button to link
   .resume {
     margin-top: 20%;
     display: flex;
@@ -90,6 +95,7 @@ p {
     }
   }
 
+  //styling for skills image below resume
   figure {
     display: flex;
     justify-content: center;
@@ -101,7 +107,7 @@ p {
   }
 }
 
-
+//media rules for table
 @media screen and (min-width: 640px) {
   .main {
     display: grid;
@@ -171,6 +177,7 @@ p {
 
 }
 
+//media rules for desktop
 @media screen and (min-width: 1250px) { 
 
   .higuy {
