@@ -70,6 +70,9 @@
 21.5.20
 * *1200*: Site is finally stable on all platforms
 
-
+***
+22.5.20
+* *0900*: 
+  * 
 
 
