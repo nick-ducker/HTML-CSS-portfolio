@@ -62,9 +62,15 @@
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
     justify-items: center;
+    
 
     a {
+      display: flex;
       height: 100%;
+      
+      img {
+        object-fit: contain;
+      }
     }
   }
 

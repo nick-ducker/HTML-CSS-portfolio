@@ -89,7 +89,14 @@
     justify-items: center;
   }
   .connectbuttons a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     height: 100%;
+  }
+  .connectbuttons a img {
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .connectillustration img {
     max-width: 100%;
