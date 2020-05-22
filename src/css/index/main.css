@@ -397,6 +397,9 @@ nav a h2 {
   width: 100%;
   -ms-grid-columns: (1fr)[12];
       grid-template-columns: repeat(12, 1fr);
+  overflow: scroll;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .spacer {

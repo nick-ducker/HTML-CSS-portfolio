@@ -69,83 +69,53 @@ p {
   line-height: 1.2em;
 }
 
-.grid {
-  position: relative;
-  display: -ms-grid;
-  display: grid;
-  width: 100%;
-  -ms-grid-columns: (1fr)[12];
-      grid-template-columns: repeat(12, 1fr);
-  overflow: scroll;
-  overflow-y: hidden;
-  overflow-x: hidden;
-}
-
-.grid .spacer {
-  height: 10vh;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 10;
-  grid-column: 2 / span 10;
-}
-
-.grid .about {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 10;
-  grid-column: 2 / span 10;
-}
-
-.grid .about .title {
-  margin-top: 5%;
+.main .title {
   -webkit-animation: inleft 2s 1 ease-out;
           animation: inleft 2s 1 ease-out;
 }
 
-.grid .about .title img {
-  max-width: 100%;
-}
-
-.grid .about figure {
+.main figure {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 20%;
+  margin-top: 10%;
 }
 
-.grid .about .higuy img {
+.main .higuy img {
   width: 50%;
   -webkit-animation: hop 5s ease-out infinite;
           animation: hop 5s ease-out infinite;
 }
 
-.grid .about .whatcode img {
+.main .whatcode img {
   max-width: 80%;
 }
 
-.grid .about article {
+.main article {
   margin-top: 20%;
   color: #eb5160;
   text-shadow: 2px 2px 2px #000;
 }
 
-.grid .about article h3 {
+.main article h3 {
   font-size: 3rem;
   margin: 2% 0;
 }
 
-.grid .about article p {
+.main article p {
   font-size: 1.5rem;
 }
 
-.grid .skills {
+.skills {
   -ms-grid-column: 2;
   -ms-grid-column-span: 10;
   grid-column: 2 / span 10;
 }
 
-.grid .skills .resume {
+.skills .resume {
   margin-top: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -158,11 +128,11 @@ p {
           align-items: center;
 }
 
-.grid .skills .resume img {
+.skills .resume img {
   width: 60%;
 }
 
-.grid .skills .resume a {
+.skills .resume a {
   text-align: center;
   font-size: 1rem;
   text-shadow: 1px 1px 1px black;
@@ -176,12 +146,12 @@ p {
   transition: 1s;
 }
 
-.grid .skills .resume a:hover {
+.skills .resume a:hover {
   background-color: #c3c3c3;
   color: black;
 }
 
-.grid .skills figure {
+.skills figure {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -191,12 +161,12 @@ p {
   margin: 20% 0;
 }
 
-.grid .skills figure img {
+.skills figure img {
   width: 60%;
 }
 
 @media screen and (min-width: 640px) {
-  .about {
+  .main {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[10];
@@ -227,10 +197,10 @@ p {
     -o-object-fit: contain;
        object-fit: contain;
   }
-  .grid .about article p {
+  .grid .main article p {
     font-size: 2rem;
   }
-  .grid .about article h3 {
+  .grid .main article h3 {
     font-size: 4rem;
   }
   .wordsone {

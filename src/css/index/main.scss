@@ -263,7 +263,10 @@ nav {
   position: relative;
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(12, 1fr); 
+  grid-template-columns: repeat(12, 1fr);
+  overflow: scroll;
+  overflow-y: hidden;
+  overflow-x: hidden; 
 }
 
 //spacer rule for all pages
