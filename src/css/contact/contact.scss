@@ -1,7 +1,9 @@
+//animation for title
 .title {
   animation: inleft 2s ease-out 1;
 }
 
+//rules for connect details wrapper
 .connectdetails {
   width: 100%;
   height: 80vh;
@@ -51,6 +53,7 @@
   }
 }
 
+//media rule for tablet
 @media screen and (min-width: 640px) { 
 
   .connectdetails {
@@ -67,7 +70,7 @@
     a {
       display: flex;
       height: 100%;
-      
+
       img {
         object-fit: contain;
       }
@@ -82,6 +85,7 @@
   }
 }
 
+//media rule for desktop
 @media screen and (min-width: 1250px) {
   .connectdetails {
     height: 60vh;
