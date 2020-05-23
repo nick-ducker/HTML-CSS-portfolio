@@ -13,6 +13,8 @@ This website is intended to serve as a portfolio for my development brand "Drift
 
 This site contains a stripped back about me page with links to a resume and a skills graph. A projects page that showcases and links some of my github repos. A blog page that contains five standalone blogs and a contact page with twitter, github, linked in and email links. 
 
+The target audience for this website is any potential employer or any other coders looking to collaborate.
+
 ## Functionality / Features 
   * **Stripped back page design:**
       
@@ -32,8 +34,49 @@ This site contains a stripped back about me page with links to a resume and a sk
 
      ![Dropdown menu gif](docs/menugif.gif) 
 
+  ***
+
+  * **Expandable content elements**
+
+    Both the blog page and project page contain expandable elements that react to hover and touch on desktop and tablet/mobile respectively. The goal was again to create an easy to navigate page structure that wouldn't clutter the screen too much. The user is able to nagivate to a view only the content they're potentially interesting in this way. 
+
+    ![Blog page gif](docs/bloggif.gif)
+
+    _Blog page expandable elements_
+
+    ![Project page gif](docs/projectgif.gif)
+
+    _Project page exandable elements_
+
+  ***
+
+  * **Animated graphical content throughout website**
+
+  While the website itself is fairly stripped back, I wanted to include a few subtle animations to keep the user engaged. To this end, the title page, about page, contact page and menu all have subtle animation elements to them. 
+
+  ![Title page animation](docs/titleanimation.gif)
+
+  ![Menu animation](docs/menuanimation.gif)
+
+  ![Avatar animation](docs/avataranimation.gif)
+
+  ![Contact page animation](docs/connectanimations.gif)
+
+  ***
+
+  * **Custom pixel art created specifically for brand and site**
+
+  All the pixel art on this site, including banners and icons was custom made for the purpose. While this is potentially a little overkill, I wanted to make sure my site stood out from the pack in as many ways as I could. Creating some relatively simple pixel art elements seemed like a good way to do this.
+
   * ****
 
 ## Sitemap
 
+The site is simple to navigate. From any page you are able to access the full menu to bring you to any page. At any point the user can click on the drifting dev logo to be taken back to the title page. There is a link out to a resume PDF on the about me page, links out to social media accounts and email on the contact page and links out to a projects respective github repo on the projects page.
+
+![Sitemap graphic](docs/Sitemap.png)
+
 ## Tech Stack
+
+* HTML5
+* SCSS
