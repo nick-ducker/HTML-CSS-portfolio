@@ -36,6 +36,12 @@ The target audience for this website is any potential employer or any other code
 
   ***
 
+  * **Responsiveness for mobile, tablet and desktop size screens**
+
+    The site has been created with responsiveness in mind from the ground up. The site was built for mobile first, then optimized for tablet and desktop screens once the mobile site was complete.
+
+    ![Responsive demonstration gif](docs/respinsive.gif)
+
   * **Expandable content elements**
 
     Both the blog page and project page contain expandable elements that react to hover and touch on desktop and tablet/mobile respectively. The goal was again to create an easy to navigate page structure that wouldn't clutter the screen too much. The user is able to nagivate to a view only the content they're potentially interesting in this way. 
