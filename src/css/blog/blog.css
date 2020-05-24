@@ -45,6 +45,9 @@
       -ms-flex-direction: column;
           flex-direction: column;
   overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  scrollbar-width: none;
   -webkit-transition: 2s 1s;
   transition: 2s 1s;
 }
