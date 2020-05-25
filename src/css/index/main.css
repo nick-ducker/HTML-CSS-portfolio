@@ -1,4 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald:wght@300&display=swap");
+@-webkit-keyframes willitblend {
+  0% {
+    margin: 0;
+  }
+  100% {
+    margin: 100;
+  }
+}
+@keyframes willitblend {
+  0% {
+    margin: 0;
+  }
+  100% {
+    margin: 100;
+  }
+}
+
 @-webkit-keyframes dropdown {
   0% {
     display: block;
@@ -11,6 +28,7 @@
     opacity: 1;
   }
 }
+
 @keyframes dropdown {
   0% {
     display: block;
