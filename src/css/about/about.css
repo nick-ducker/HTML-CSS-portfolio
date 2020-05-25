@@ -70,6 +70,8 @@ p {
 }
 
 .main .title {
+  -o-object-fit: contain;
+     object-fit: contain;
   -webkit-animation: inleft 2s 1 ease-out;
           animation: inleft 2s 1 ease-out;
 }
@@ -85,12 +87,16 @@ p {
 }
 
 .main .higuy img {
+  -o-object-fit: contain;
+     object-fit: contain;
   width: 50%;
   -webkit-animation: hop 5s ease-out infinite;
           animation: hop 5s ease-out infinite;
 }
 
 .main .whatcode img {
+  -o-object-fit: contain;
+     object-fit: contain;
   max-width: 80%;
 }
 
@@ -163,6 +169,8 @@ p {
 
 .skills figure img {
   width: 60%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 @media screen and (min-width: 640px) {
