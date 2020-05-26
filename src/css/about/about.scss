@@ -23,7 +23,10 @@ p {
 //styling for text description and images
 .main {
   .title {
-    object-fit: contain;
+    img {
+      height: auto;
+    }
+    
     animation: inleft 2s 1 ease-out;
   }
 
@@ -35,7 +38,7 @@ p {
 
   .higuy {
     img {
-      object-fit: contain;
+      height: auto;
       width: 50%;
       animation: hop 5s ease-out infinite; 
     }
@@ -43,7 +46,7 @@ p {
 
   .whatcode {
     img {
-      object-fit: contain;
+      height: auto;
       max-width: 80%;
     }
   }
@@ -106,7 +109,7 @@ p {
 
     img {
       width: 60%;
-      object-fit: contain;
+      height: auto;
     }
   }
 }
